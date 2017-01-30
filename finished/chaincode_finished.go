@@ -111,7 +111,5 @@ func (t *SimpleChaincode) read(stub shim.ChaincodeStubInterface, args []string) 
 		return nil, errors.New(jsonResp)
 	}
 	
-	valAsbytes = valAsbytes + 1
-	
 	return valAsbytes, nil
 }
